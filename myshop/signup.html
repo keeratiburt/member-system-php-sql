@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="css/signup.css" rel="stylesheet" type="text/css">
+
+    </head>
+	<body>
+		<div class="register">
+			<h1>สมัครสมาชิก</h1>
+			<form action="signup.php" method="post" autocomplete="off"> <!-- คำสั่ง action จะกำหนดลิงค์หลังจากกรอกฟอร์เสร็จสิ้น-->
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<label for="email">
+					<i class="fas fa-envelope"></i>
+				</label>
+				<input type="email" name="email" placeholder="Email" id="email" required>
+				<label for="tel">
+					<i class="fas fa-phone"></i>
+				</label>
+				<input type="tel" name="tel" placeholder="Telephone number" id="tel" >
+				<label for="address">
+					<i class="fas fa-address-book"></i>
+				</label>
+				<input type="text" name="address" placeholder="Address" id="address" >
+				<label for="name">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="name" placeholder="Fullname" id="name" >
+				<input onclick="document.location='index.html'" type="button" value="ย้อนกลับ" id="cancelButton">
+				<input type="submit" value="ตกลง" id="submitButton" name="signup"> <!-- ปุ่ม submit สำหรับส่งค่าไปยังขั้นตอนต่อไปผ่านคำสั่ง action='signup.php' ในบรรทัดที่ 13-->
+			</form>
+		</div>
+	</body>
+</html>

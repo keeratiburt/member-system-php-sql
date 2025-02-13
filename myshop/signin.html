@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="css/signup.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    
+    <!-- bootstrap และ CSS สำหรับ form-->
+    <div class="register">
+        <h1>เข้าสู่ระบบ</h1>
+        <!-- แท็ก form สำหรับกรอกข้อมูล-->
+        <form action="signin.php" method="post" autocomplete="on"> <!-- action คือ กำหนดหน้าถัดไปหลังจาก submit form-->
+            <label for="username">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <p>หากยังไม่เป็นสมาชิก <a href="signup.html">คลิกที่นี่เพื่อสมัคร</a>.</p>
+            <input onclick="document.location='index.html'" type="button" value="ย้อนกลับ" id="cancelButton">
+            <input type="submit" value="เข้าสู่ระบบ" id="submitButton" name="signup"> <!-- type=submit ทำหน้าที่เป็นตัว submitฟอร์มและลิงค์ไปยังส่วนของ action=signin.php-->
+
+        </form>
+    </div>
+</body>
+</html>
